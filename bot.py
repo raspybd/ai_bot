@@ -1,7 +1,4 @@
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.document_loaders import DirectoryLoader
-from langchain_community.vectorstores import Chroma
-from langchain_community.chat_models import ChatOpenAI
+
 import os
 from dotenv import load_dotenv
 from langchain.document_loaders import DirectoryLoader
@@ -14,6 +11,10 @@ import yaml
 import logging
 from datetime import datetime
 import codecs  # إضافة مكتبة للتعامل مع الترميز
+from langchain_community.document_loaders import DirectoryLoader
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import Chroma
+from langchain_community.chat_models import ChatOpenAI
 
 # إنشاء مجلد السجلات إذا لم يكن موجوداً
 os.makedirs('logs', exist_ok=True)

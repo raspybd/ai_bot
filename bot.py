@@ -8,9 +8,8 @@ from langchain_community.document_loaders import (
     UnstructuredMarkdownLoader
 )
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import Chroma
-from langchain_openai import ChatOpenAI
 from langchain.chains import RetrievalQA
 import yaml
 import logging
@@ -21,23 +20,22 @@ from pathlib import Path
 import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
+import traceback
 
-# Configure basic logging
+# تكوين التسجيل
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     encoding='utf-8'
 )
+logger = logging.getLogger(__name__)
 
 class DocumentProcessor:
-    """Handle document loading and processing with progress tracking"""
-    
     def __init__(self, config: Dict[str, Any]):
         self.config = config
         self.setup_loaders()
         
     def setup_loaders(self):
-        """Initialize document loaders for different file types"""
         self.loaders = {
             '.txt': TextLoader,
             '.pdf': PyPDFLoader,
@@ -45,70 +43,62 @@ class DocumentProcessor:
             '.md': UnstructuredMarkdownLoader
         }
 
-    def get_file_hash(self, file_path: Path) -> str:
-        """Generate MD5 hash of file content"""
-        return hashlib.md5(file_path.read_bytes()).hexdigest()
-
     def process_single_file(self, file_path: Path) -> Optional[List[Any]]:
-        """Process a single file and return its documents"""
         try:
-            file_size = file_path.stat().st_size
-            max_size = self.config['document_settings']['max_file_size']
-            file_extension = file_path.suffix.lower()
-
-            # Log file processing
-            logging.info(f"معالجة الملف: {file_path.name}")
-
-            # Validate file size
-            if file_size > max_size:
-                logging.warning(
-                    f"حجم الملف كبير: {file_path.name} "
-                    f"({file_size / 1048576:.2f}MB > {max_size / 1048576:.2f}MB)"
-                )
+            logger.info(f"معالجة الملف: {file_path}")
+            
+            if not file_path.is_file():
+                logger.error(f"الملف غير موجود: {file_path}")
                 return None
 
-            # Get appropriate loader
+            file_extension = file_path.suffix.lower()
+            if file_extension not in self.config['document_settings']['allowed_extensions']:
+                logger.warning(f"نوع الملف غير مدعوم: {file_extension}")
+                return None
+
             loader_class = self.loaders.get(file_extension)
             if not loader_class:
-                logging.warning(f"نوع الملف غير مدعوم: {file_extension}")
+                logger.warning(f"لا يوجد معالج لنوع الملف: {file_extension}")
                 return None
 
-            # Load document
+            # تحميل المستند
             loader = loader_class(str(file_path))
             docs = loader.load()
             
-            # Add metadata
+            # إضافة البيانات الوصفية
             for doc in docs:
                 doc.metadata.update({
                     'source': str(file_path),
                     'file_type': file_extension,
-                    'file_size': file_size,
                     'creation_date': datetime.fromtimestamp(
                         file_path.stat().st_ctime
                     ).isoformat()
                 })
 
+            logger.info(f"تم تحميل {len(docs)} صفحة/قطعة من {file_path}")
             return docs
 
         except Exception as e:
-            logging.error(f"خطأ في معالجة الملف {file_path}: {str(e)}")
+            logger.error(f"خطأ في معالجة الملف {file_path}: {str(e)}")
+            logger.error(traceback.format_exc())
             return None
 
-    def process_documents(self, directory: Path) -> List[Any]:
-        """Process all documents in directory with progress tracking"""
-        # Get list of files
-        files = []
-        for ext in self.config['document_settings']['allowed_extensions']:
-            files.extend(directory.glob(f"**/*{ext}"))
-
-        if not files:
-            logging.warning("لم يتم العثور على مستندات في المجلد المحدد")
+    def process_documents(self, directory: str) -> List[Any]:
+        directory_path = Path(directory)
+        if not directory_path.exists():
+            logger.error(f"المجلد غير موجود: {directory}")
             return []
 
-        # Process files with progress bar
-        documents = []
-        processed_hashes = set()
+        # جمع كل الملفات المدعومة
+        files = []
+        for ext in self.config['document_settings']['allowed_extensions']:
+            files.extend(directory_path.glob(f"**/*{ext}"))
 
+        if not files:
+            logger.warning("لم يتم العثور على مستندات في المجلد المحدد")
+            return []
+
+        documents = []
         with ThreadPoolExecutor() as executor:
             future_to_file = {
                 executor.submit(self.process_single_file, f): f 
@@ -117,174 +107,169 @@ class DocumentProcessor:
             
             with tqdm(total=len(files), desc="تحميل المستندات") as pbar:
                 for future in as_completed(future_to_file):
-                    file_path = future_to_file[future]
                     try:
                         docs = future.result()
                         if docs:
-                            file_hash = self.get_file_hash(file_path)
-                            if file_hash not in processed_hashes:
-                                documents.extend(docs)
-                                processed_hashes.add(file_hash)
+                            documents.extend(docs)
                     except Exception as e:
-                        logging.error(f"فشل في معالجة الملف {file_path}: {str(e)}")
+                        logger.error(f"خطأ في معالجة المستند: {str(e)}")
                     pbar.update(1)
 
         return documents
 
 class DocumentBot:
-    """Main bot class for handling document Q&A"""
-    
     def __init__(self):
         self.setup_environment()
         self.setup_bot()
         
     def setup_environment(self):
-        """Setup environment and load configuration"""
         try:
-            # Load environment variables
+            # تحميل المتغيرات البيئية
             load_dotenv()
             self.api_key = os.getenv('OPENAI_API_KEY')
             if not self.api_key:
                 raise ValueError("لم يتم العثور على مفتاح API")
             
-            # Load configuration
+            # تحميل الإعدادات
             with codecs.open('config.yaml', 'r', 'utf-8') as f:
                 self.config = yaml.safe_load(f)
             
-            logging.info("تم تحميل الإعدادات بنجاح")
+            logger.info("تم تحميل الإعدادات بنجاح")
         except Exception as e:
-            logging.error(f"خطأ في إعداد البيئة: {str(e)}")
+            logger.error(f"خطأ في إعداد البيئة: {str(e)}")
+            logger.error(traceback.format_exc())
             raise
 
     def setup_bot(self):
-        """Setup document processor and QA chain"""
         try:
-            # Initialize document processor
+            # تهيئة معالج المستندات
             processor = DocumentProcessor(self.config)
             
-            # Process documents
+            # معالجة المستندات
             documents = processor.process_documents(
-                Path(self.config['document_settings']['storage_directory'])
+                self.config['document_settings']['storage_directory']
             )
             
             if not documents:
                 raise ValueError("لم يتم العثور على مستندات صالحة")
             
-            logging.info(f"تم تحميل {len(documents)} مستند")
+            logger.info(f"تم تحميل {len(documents)} مستند")
 
-            # Split documents into chunks
+            # تقسيم النصوص
             text_splitter = RecursiveCharacterTextSplitter(
-                chunk_size=self.config['document_settings']['chunk_size'],
-                chunk_overlap=self.config['document_settings']['chunk_overlap'],
+                chunk_size=1000,  # قيمة افتراضية إذا لم توجد في الإعدادات
+                chunk_overlap=200,
                 length_function=len,
-                separators=["\n\n", "\n", " ", ""]
+                separators=["\n\n", "\n", ".", " ", ""]
             )
             
             texts = text_splitter.split_documents(documents)
-            logging.info(f"تم إنشاء {len(texts)} قطعة نصية")
+            logger.info(f"تم إنشاء {len(texts)} قطعة نصية")
 
-            # Setup vector store
+            # إعداد قاعدة البيانات المتجهة
             embeddings = OpenAIEmbeddings()
             
-            # Create persistent storage
-            persist_dir = self.config['vector_store']['persist_directory']
+            # إنشاء مجلد الحفظ
+            persist_dir = "db"
             os.makedirs(persist_dir, exist_ok=True)
             
-            # Initialize or load vector store
+            # تهيئة قاعدة البيانات
             self.db = Chroma.from_documents(
                 documents=texts,
                 embedding=embeddings,
-                persist_directory=persist_dir,
-                collection_name=self.config['vector_store']['collection_name']
+                persist_directory=persist_dir
             )
-            self.db.persist()
             
-            # Setup retriever
+            # إعداد الاسترجاع
             retriever = self.db.as_retriever(
                 search_kwargs={
-                    "k": self.config['search_settings']['max_results'],
-                    "fetch_k": self.config['search_settings']['fetch_k'],
-                    "filter_duplicates": self.config['search_settings']['filter_duplicates']
+                    "k": self.config['search_settings']['max_results']
                 }
             )
             
-            # Initialize QA chain
-            model_settings = self.config['model_settings']
+            # تهيئة نموذج المحادثة
+            llm = ChatOpenAI(
+                temperature=0,
+                model_name="gpt-3.5-turbo",
+                max_tokens=1000
+            )
+            
+            # إعداد سلسلة الأسئلة والأجوبة
             self.qa = RetrievalQA.from_chain_type(
-                llm=ChatOpenAI(
-                    temperature=model_settings['temperature'],
-                    model_name=model_settings['model_name'],
-                    max_tokens=model_settings['max_tokens'],
-                    streaming=model_settings['streaming']
-                ),
+                llm=llm,
                 chain_type="stuff",
                 retriever=retriever,
                 return_source_documents=True
             )
             
-            logging.info("تم إعداد البوت بنجاح")
+            logger.info("تم إعداد البوت بنجاح")
         except Exception as e:
-            logging.error(f"خطأ في إعداد البوت: {str(e)}")
+            logger.error(f"خطأ في إعداد البوت: {str(e)}")
+            logger.error(traceback.format_exc())
             raise
 
     def answer_question(self, question: str) -> Dict[str, Any]:
-        """Answer a question using the QA chain"""
         try:
-            logging.info(f"سؤال جديد: {question}")
+            if not question:
+                return {
+                    "answer": "الرجاء إدخال سؤال",
+                    "sources": []
+                }
+
+            logger.info(f"معالجة السؤال: {question}")
+            
+            # الحصول على الإجابة
             result = self.qa({"query": question})
             
-            # Prepare sources
+            # تجهيز المصادر
             sources = []
             seen_contents = set()
             
-            for doc in result["source_documents"]:
-                # Skip duplicates
+            for doc in result.get("source_documents", []):
                 if doc.page_content in seen_contents:
                     continue
-                    
+                
                 source = {
                     "content": doc.page_content,
                     "metadata": {
                         k: str(v) for k, v in doc.metadata.items()
-                        if k in {'source', 'file_type', 'creation_date', 'page'}
+                        if k in {'source', 'file_type', 'creation_date'}
                     }
                 }
                 sources.append(source)
                 seen_contents.add(doc.page_content)
             
             response = {
-                "answer": result["result"],
-                "sources": sources[:self.config['search_settings']['max_results']]
+                "answer": result.get("result", "لم يتم العثور على إجابة مناسبة"),
+                "sources": sources[:5]  # إرجاع أفضل 5 مصادر فقط
             }
             
-            logging.info("تم إنشاء الإجابة بنجاح")
+            logger.info("تم إنشاء الإجابة بنجاح")
             return response
             
         except Exception as e:
-            error_msg = f"خطأ في معالجة السؤال: {str(e)}"
-            logging.error(error_msg)
+            logger.error(f"خطأ في معالجة السؤال: {str(e)}")
+            logger.error(traceback.format_exc())
             return {
-                "answer": "عذراً، حدث خطأ في معالجة سؤالك.",
+                "answer": f"عذراً، حدث خطأ في معالجة السؤال: {str(e)}",
                 "sources": []
             }
 
 def main():
-    """Main function for CLI operation"""
-    print("جاري تحميل البوت...")
     try:
+        print("جاري تحميل البوت...")
         bot = DocumentBot()
-        print("\nتم تحميل البوت بنجاح!")
-        print("اكتب 'خروج' للإنهاء")
+        print("تم تحميل البوت بنجاح!")
         
         while True:
-            question = input("\nسؤالك: ").strip()
+            question = input("\nسؤالك (اكتب 'خروج' للإنهاء): ").strip()
             
             if question.lower() in ['خروج', 'exit']:
                 print("شكراً لاستخدام البوت!")
                 break
                 
             if not question:
-                print("الرجاء إدخال سؤال صحيح")
+                print("الرجاء إدخال سؤال")
                 continue
             
             response = bot.answer_question(question)
@@ -293,7 +278,7 @@ def main():
             print(response["answer"])
             
             if response["sources"]:
-                print("\nالمصادر المستخدمة:")
+                print("\nالمصادر:")
                 for i, source in enumerate(response["sources"], 1):
                     print(f"\nمصدر {i}:")
                     print(f"المحتوى: {source['content']}")
@@ -302,9 +287,9 @@ def main():
                         print(f"  {key}: {value}")
             
     except Exception as e:
-        error_msg = f"خطأ في تشغيل البوت: {str(e)}"
-        print(error_msg)
-        logging.error(error_msg)
+        print(f"خطأ: {str(e)}")
+        logger.error(f"خطأ في تشغيل البوت: {str(e)}")
+        logger.error(traceback.format_exc())
 
 if __name__ == "__main__":
     main()

@@ -11,7 +11,7 @@ tiktoken>=0.5.1
 python-docx>=0.8.11
 docx2txt>=0.8
 pypdf>=3.17.1
-python-markdown>=3.5.1
+Markdown>=3.4.3
 unstructured>=0.10.18
 pdf2image>=1.16.3
 pdfminer.six>=20221105
@@ -32,7 +32,6 @@ tqdm>=4.65.0
 numpy>=1.24.0
 pandas>=2.0.0
 typing-extensions>=4.5.0
-pytest>=7.4.0
 
 # Text processing
 chardet>=5.2.0
@@ -40,6 +39,3 @@ python-magic>=0.4.27
 
 # Logging and monitoring
 loguru>=0.7.0
-
-# Optional but recommended for better performance
-sentence-transformers>=2.2.2

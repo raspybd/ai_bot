@@ -12,3 +12,4 @@ python-dotenv
 pypdf
 python-docx
 flask-cors
+python-magic

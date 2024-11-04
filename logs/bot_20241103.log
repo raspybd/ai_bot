@@ -1,0 +1,968 @@
+2024-11-03 19:27:04,905 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 19:27:54,722 - ERROR - خطأ في إعداد البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 19:27:54,722 - ERROR - خطأ في تشغيل البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:06:54,866 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 20:07:00,592 - ERROR - خطأ في إعداد البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:07:00,592 - ERROR - خطأ في تشغيل البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:09:44,619 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 20:09:47,500 - ERROR - خطأ في إعداد البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:09:47,500 - ERROR - خطأ في تشغيل البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:09:55,068 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 20:09:56,887 - ERROR - خطأ في إعداد البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:09:56,887 - ERROR - خطأ في تشغيل البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:10:15,535 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 20:10:17,421 - ERROR - خطأ في إعداد البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:10:17,421 - ERROR - خطأ في تشغيل البوت: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:22:25,708 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 20:22:28,487 - ERROR - خطأ في إعداد البوت: 
+**********************************************************************
+  Resource [93maveraged_perceptron_tagger_eng[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger_eng')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtaggers/averaged_perceptron_tagger_eng/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:22:28,487 - ERROR - خطأ في تشغيل البوت: 
+**********************************************************************
+  Resource [93maveraged_perceptron_tagger_eng[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger_eng')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtaggers/averaged_perceptron_tagger_eng/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:22:50,641 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 20:22:52,449 - ERROR - خطأ في إعداد البوت: 
+**********************************************************************
+  Resource [93maveraged_perceptron_tagger_eng[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger_eng')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtaggers/averaged_perceptron_tagger_eng/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:22:52,450 - ERROR - خطأ في تشغيل البوت: 
+**********************************************************************
+  Resource [93maveraged_perceptron_tagger_eng[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('averaged_perceptron_tagger_eng')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtaggers/averaged_perceptron_tagger_eng/[0m
+
+  Searched in:
+    - '/Users/yousefalmutairi/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/share/nltk_data'
+    - '/Users/yousefalmutairi/ai project/.venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2024-11-03 20:28:59,816 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 20:29:02,717 - INFO - تم تحميل 2 مستند
+2024-11-03 20:29:02,776 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 20:29:02,779 - INFO - Running Chroma using direct local API.
+2024-11-03 20:29:02,789 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 20:29:16,446 - INFO - تم إعداد البوت بنجاح
+2024-11-03 20:29:53,434 - INFO - سؤال جديد: ما هي اهداف ٢٠٥٠
+2024-11-03 20:29:54,848 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 20:29:54,849 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 20:29:54,849 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 20:29:54,850 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 20:29:54,851 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 20:29:54,852 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 20:29:54,853 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 20:29:54,853 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 20:29:54,854 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 20:29:54,855 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 20:29:54,856 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 20:29:54,857 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 20:29:54,857 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 20:29:54,858 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 20:29:54,859 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 20:29:54,860 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 20:29:54,860 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 20:29:54,861 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 20:29:54,862 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 20:29:54,862 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 20:29:54,863 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 20:29:54,864 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 20:29:54,865 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 20:29:54,865 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 20:29:54,866 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 20:29:54,866 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 20:29:54,867 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 20:29:54,868 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 20:29:54,869 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 20:29:54,869 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 20:29:54,870 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 20:29:54,871 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 20:29:54,871 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 20:29:54,872 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 20:29:54,873 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 20:29:54,873 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 20:29:54,874 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 20:29:54,874 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 20:29:54,875 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 20:29:54,876 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 20:29:54,876 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 20:29:54,877 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 20:29:54,878 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 20:29:54,878 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 20:29:54,879 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 20:29:54,880 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 20:29:54,880 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 20:29:54,881 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 20:29:56,614 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 20:39:57,534 - ERROR - خطأ في تشغيل البوت: 
+2024-11-03 20:47:21,920 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 20:47:24,985 - INFO - تم تحميل 2 مستند
+2024-11-03 20:47:25,034 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 20:47:25,036 - INFO - Running Chroma using direct local API.
+2024-11-03 20:47:25,044 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 20:47:28,003 - INFO - تم إعداد البوت بنجاح
+2024-11-03 21:04:31,026 - ERROR - خطأ في تشغيل البوت: 
+2024-11-03 21:04:31,036 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 21:04:31,051 - INFO - تم تحميل 2 مستند
+2024-11-03 21:04:31,053 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 21:04:31,054 - INFO - Running Chroma using direct local API.
+2024-11-03 21:04:31,054 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 21:04:32,575 - INFO - تم إعداد البوت بنجاح
+2024-11-03 21:04:38,707 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-03 21:04:38,708 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-03 21:04:38,710 - INFO -  * Restarting with stat
+2024-11-03 21:04:40,691 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 21:04:43,549 - INFO - تم تحميل 2 مستند
+2024-11-03 21:04:43,601 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 21:04:43,602 - INFO - Running Chroma using direct local API.
+2024-11-03 21:04:43,611 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 21:04:45,694 - INFO - تم إعداد البوت بنجاح
+2024-11-03 21:04:45,694 - ERROR - خطأ في تشغيل البوت: 
+2024-11-03 21:04:45,698 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 21:04:45,708 - INFO - تم تحميل 2 مستند
+2024-11-03 21:04:45,709 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 21:04:45,709 - INFO - Running Chroma using direct local API.
+2024-11-03 21:04:45,709 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 21:04:46,812 - INFO - تم إعداد البوت بنجاح
+2024-11-03 21:04:46,873 - WARNING -  * Debugger is active!
+2024-11-03 21:04:46,903 - INFO -  * Debugger PIN: 115-137-697
+2024-11-03 21:05:38,908 - INFO - 127.0.0.1 - - [03/Nov/2024 21:05:38] "GET / HTTP/1.1" 200 -
+2024-11-03 21:05:39,154 - INFO - 127.0.0.1 - - [03/Nov/2024 21:05:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-03 21:05:55,879 - INFO - سؤال جديد: ما هي اهداف ٢٠٥٠
+2024-11-03 21:05:57,107 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 21:05:57,108 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 21:05:57,109 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 21:05:57,110 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 21:05:57,110 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 21:05:57,111 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 21:05:57,111 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 21:05:57,112 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 21:05:57,113 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 21:05:57,113 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 21:05:57,114 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 21:05:57,114 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 21:05:57,115 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 21:05:57,116 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 21:05:57,116 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 21:05:57,117 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 21:05:57,117 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 21:05:57,118 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 21:05:57,118 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 21:05:57,119 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 21:05:57,119 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 21:05:57,120 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 21:05:57,120 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 21:05:57,121 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 21:05:57,121 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 21:05:57,122 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 21:05:57,123 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 21:05:57,123 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 21:05:57,124 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 21:05:57,124 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 21:05:57,125 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 21:05:57,125 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 21:05:57,126 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 21:05:57,126 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 21:05:57,127 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 21:05:57,127 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 21:05:57,128 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 21:05:57,128 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 21:05:57,129 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 21:05:57,129 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 21:05:57,130 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 21:05:57,130 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 21:05:57,131 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 21:05:57,131 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 21:05:57,132 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 21:05:57,133 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 21:05:57,133 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 21:05:57,134 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 21:05:57,864 - INFO - سؤال جديد: ما هي اهداف ٢٠٥٠
+2024-11-03 21:05:58,904 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 21:05:58,905 - INFO - 127.0.0.1 - - [03/Nov/2024 21:05:58] "POST / HTTP/1.1" 200 -
+2024-11-03 21:05:58,907 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 21:05:58,908 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 21:05:58,908 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 21:05:58,909 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 21:05:58,909 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 21:05:58,910 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 21:05:58,911 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 21:05:58,911 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 21:05:58,912 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 21:05:58,913 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 21:05:58,913 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 21:05:58,914 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 21:05:58,915 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 21:05:58,915 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 21:05:58,916 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 21:05:58,917 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 21:05:58,917 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 21:05:58,918 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 21:05:58,918 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 21:05:58,919 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 21:05:58,920 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 21:05:58,920 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 21:05:58,921 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 21:05:58,921 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 21:05:58,922 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 21:05:58,922 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 21:05:58,923 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 21:05:58,923 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 21:05:58,924 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 21:05:58,924 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 21:05:58,925 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 21:05:58,925 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 21:05:58,926 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 21:05:58,926 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 21:05:58,927 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 21:05:58,927 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 21:05:58,928 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 21:05:58,928 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 21:05:58,929 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 21:05:58,929 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 21:05:58,930 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 21:05:58,930 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 21:05:58,931 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 21:05:58,931 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 21:05:58,932 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 21:05:58,932 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 21:05:58,933 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 21:05:58,933 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 21:05:59,929 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 21:05:59,929 - INFO - 127.0.0.1 - - [03/Nov/2024 21:05:59] "POST / HTTP/1.1" 200 -
+2024-11-03 21:06:38,041 - INFO - سؤال جديد: ماذا تعرف
+2024-11-03 21:06:39,559 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 21:06:39,560 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 21:06:39,561 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 21:06:39,561 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 21:06:39,562 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 21:06:39,563 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 21:06:39,563 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 21:06:39,564 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 21:06:39,564 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 21:06:39,565 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 21:06:39,566 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 21:06:39,566 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 21:06:39,567 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 21:06:39,568 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 21:06:39,568 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 21:06:39,569 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 21:06:39,569 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 21:06:39,570 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 21:06:39,571 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 21:06:39,571 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 21:06:39,572 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 21:06:39,572 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 21:06:39,573 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 21:06:39,574 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 21:06:39,574 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 21:06:39,575 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 21:06:39,575 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 21:06:39,576 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 21:06:39,577 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 21:06:39,577 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 21:06:39,578 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 21:06:39,578 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 21:06:39,579 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 21:06:39,580 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 21:06:39,580 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 21:06:39,581 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 21:06:39,581 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 21:06:39,582 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 21:06:39,582 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 21:06:39,583 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 21:06:39,584 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 21:06:39,584 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 21:06:39,585 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 21:06:39,585 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 21:06:39,586 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 21:06:39,586 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 21:06:39,587 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 21:06:39,588 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 21:06:39,664 - INFO - سؤال جديد: ماذا تعرف
+2024-11-03 21:06:40,610 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 21:06:40,611 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 21:06:40,612 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 21:06:40,613 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 21:06:40,613 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 21:06:40,614 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 21:06:40,615 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 21:06:40,615 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 21:06:40,616 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 21:06:40,617 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 21:06:40,617 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 21:06:40,618 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 21:06:40,619 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 21:06:40,619 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 21:06:40,620 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 21:06:40,621 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 21:06:40,621 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 21:06:40,622 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 21:06:40,623 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 21:06:40,623 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 21:06:40,624 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 21:06:40,625 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 21:06:40,625 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 21:06:40,626 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 21:06:40,626 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 21:06:40,627 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 21:06:40,628 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 21:06:40,628 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 21:06:40,629 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 21:06:40,629 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 21:06:40,630 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 21:06:40,631 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 21:06:40,631 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 21:06:40,632 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 21:06:40,632 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 21:06:40,633 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 21:06:40,634 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 21:06:40,634 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 21:06:40,635 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 21:06:40,636 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 21:06:40,636 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 21:06:40,637 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 21:06:40,637 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 21:06:40,638 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 21:06:40,639 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 21:06:40,639 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 21:06:40,640 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 21:06:40,640 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 21:06:43,041 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 21:06:43,042 - INFO - 127.0.0.1 - - [03/Nov/2024 21:06:43] "POST / HTTP/1.1" 200 -
+2024-11-03 21:06:44,065 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 21:06:44,066 - INFO - 127.0.0.1 - - [03/Nov/2024 21:06:44] "POST / HTTP/1.1" 200 -
+2024-11-03 21:19:13,209 - INFO - 127.0.0.1 - - [03/Nov/2024 21:19:13] "GET / HTTP/1.1" 200 -
+2024-11-03 21:19:15,982 - INFO - 127.0.0.1 - - [03/Nov/2024 21:19:15] "GET / HTTP/1.1" 200 -
+2024-11-03 21:19:29,517 - INFO - سؤال جديد: who are you
+2024-11-03 21:19:30,577 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 21:19:30,578 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 21:19:30,579 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 21:19:30,579 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 21:19:30,580 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 21:19:30,581 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 21:19:30,581 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 21:19:30,582 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 21:19:30,583 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 21:19:30,583 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 21:19:30,584 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 21:19:30,585 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 21:19:30,585 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 21:19:30,586 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 21:19:30,586 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 21:19:30,587 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 21:19:30,588 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 21:19:30,588 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 21:19:30,589 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 21:19:30,590 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 21:19:30,590 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 21:19:30,591 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 21:19:30,591 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 21:19:30,592 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 21:19:30,592 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 21:19:30,593 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 21:19:30,594 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 21:19:30,594 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 21:19:30,595 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 21:19:30,596 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 21:19:30,596 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 21:19:30,597 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 21:19:30,598 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 21:19:30,598 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 21:19:30,599 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 21:19:30,600 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 21:19:30,600 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 21:19:30,601 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 21:19:30,602 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 21:19:30,603 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 21:19:30,603 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 21:19:30,604 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 21:19:30,605 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 21:19:30,606 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 21:19:30,606 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 21:19:30,607 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 21:19:30,607 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 21:19:30,608 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 21:19:31,673 - INFO - سؤال جديد: who are you
+2024-11-03 21:19:31,961 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 21:19:31,962 - INFO - 127.0.0.1 - - [03/Nov/2024 21:19:31] "POST / HTTP/1.1" 200 -
+2024-11-03 21:19:32,278 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 21:19:32,279 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 21:19:32,280 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 21:19:32,281 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 21:19:32,281 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 21:19:32,282 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 21:19:32,283 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 21:19:32,284 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 21:19:32,285 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 21:19:32,285 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 21:19:32,286 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 21:19:32,287 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 21:19:32,287 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 21:19:32,288 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 21:19:32,289 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 21:19:32,289 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 21:19:32,290 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 21:19:32,291 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 21:19:32,291 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 21:19:32,292 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 21:19:32,293 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 21:19:32,293 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 21:19:32,294 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 21:19:32,295 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 21:19:32,295 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 21:19:32,296 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 21:19:32,297 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 21:19:32,297 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 21:19:32,298 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 21:19:32,298 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 21:19:32,299 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 21:19:32,300 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 21:19:32,300 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 21:19:32,301 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 21:19:32,302 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 21:19:32,302 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 21:19:32,303 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 21:19:32,303 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 21:19:32,304 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 21:19:32,305 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 21:19:32,305 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 21:19:32,306 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 21:19:32,306 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 21:19:32,307 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 21:19:32,308 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 21:19:32,308 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 21:19:32,309 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 21:19:32,309 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 21:19:33,282 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 21:19:33,282 - INFO - 127.0.0.1 - - [03/Nov/2024 21:19:33] "POST / HTTP/1.1" 200 -
+2024-11-03 21:27:32,497 - INFO - سؤال جديد: ما هي المستندات المتوفرة عندك
+2024-11-03 21:27:34,036 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 21:27:34,037 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 21:27:34,038 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 21:27:34,038 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 21:27:34,039 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 21:27:34,039 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 21:27:34,040 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 21:27:34,040 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 21:27:34,041 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 21:27:34,041 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 21:27:34,042 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 21:27:34,042 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 21:27:34,043 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 21:27:34,043 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 21:27:34,044 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 21:27:34,044 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 21:27:34,045 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 21:27:34,046 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 21:27:34,046 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 21:27:34,047 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 21:27:34,047 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 21:27:34,048 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 21:27:34,048 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 21:27:34,049 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 21:27:34,049 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 21:27:34,050 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 21:27:34,050 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 21:27:34,051 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 21:27:34,051 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 21:27:34,052 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 21:27:34,052 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 21:27:34,053 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 21:27:34,053 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 21:27:34,054 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 21:27:34,054 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 21:27:34,055 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 21:27:34,055 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 21:27:34,056 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 21:27:34,056 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 21:27:34,057 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 21:27:34,057 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 21:27:34,058 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 21:27:34,058 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 21:27:34,059 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 21:27:34,059 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 21:27:34,060 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 21:27:34,060 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 21:27:34,061 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 21:27:35,572 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 21:27:35,573 - INFO - 127.0.0.1 - - [03/Nov/2024 21:27:35] "POST / HTTP/1.1" 200 -
+2024-11-03 21:27:55,048 - INFO - سؤال جديد: اذكر المقدمة
+2024-11-03 21:27:56,451 - ERROR - Chroma collection langchain contains fewer than 50 elements.
+2024-11-03 21:27:56,452 - ERROR - Chroma collection langchain contains fewer than 49 elements.
+2024-11-03 21:27:56,453 - ERROR - Chroma collection langchain contains fewer than 48 elements.
+2024-11-03 21:27:56,454 - ERROR - Chroma collection langchain contains fewer than 47 elements.
+2024-11-03 21:27:56,454 - ERROR - Chroma collection langchain contains fewer than 46 elements.
+2024-11-03 21:27:56,455 - ERROR - Chroma collection langchain contains fewer than 45 elements.
+2024-11-03 21:27:56,456 - ERROR - Chroma collection langchain contains fewer than 44 elements.
+2024-11-03 21:27:56,456 - ERROR - Chroma collection langchain contains fewer than 43 elements.
+2024-11-03 21:27:56,457 - ERROR - Chroma collection langchain contains fewer than 42 elements.
+2024-11-03 21:27:56,458 - ERROR - Chroma collection langchain contains fewer than 41 elements.
+2024-11-03 21:27:56,458 - ERROR - Chroma collection langchain contains fewer than 40 elements.
+2024-11-03 21:27:56,459 - ERROR - Chroma collection langchain contains fewer than 39 elements.
+2024-11-03 21:27:56,460 - ERROR - Chroma collection langchain contains fewer than 38 elements.
+2024-11-03 21:27:56,460 - ERROR - Chroma collection langchain contains fewer than 37 elements.
+2024-11-03 21:27:56,461 - ERROR - Chroma collection langchain contains fewer than 36 elements.
+2024-11-03 21:27:56,462 - ERROR - Chroma collection langchain contains fewer than 35 elements.
+2024-11-03 21:27:56,462 - ERROR - Chroma collection langchain contains fewer than 34 elements.
+2024-11-03 21:27:56,463 - ERROR - Chroma collection langchain contains fewer than 33 elements.
+2024-11-03 21:27:56,464 - ERROR - Chroma collection langchain contains fewer than 32 elements.
+2024-11-03 21:27:56,464 - ERROR - Chroma collection langchain contains fewer than 31 elements.
+2024-11-03 21:27:56,465 - ERROR - Chroma collection langchain contains fewer than 30 elements.
+2024-11-03 21:27:56,466 - ERROR - Chroma collection langchain contains fewer than 29 elements.
+2024-11-03 21:27:56,466 - ERROR - Chroma collection langchain contains fewer than 28 elements.
+2024-11-03 21:27:56,467 - ERROR - Chroma collection langchain contains fewer than 27 elements.
+2024-11-03 21:27:56,468 - ERROR - Chroma collection langchain contains fewer than 26 elements.
+2024-11-03 21:27:56,468 - ERROR - Chroma collection langchain contains fewer than 25 elements.
+2024-11-03 21:27:56,469 - ERROR - Chroma collection langchain contains fewer than 24 elements.
+2024-11-03 21:27:56,469 - ERROR - Chroma collection langchain contains fewer than 23 elements.
+2024-11-03 21:27:56,470 - ERROR - Chroma collection langchain contains fewer than 22 elements.
+2024-11-03 21:27:56,471 - ERROR - Chroma collection langchain contains fewer than 21 elements.
+2024-11-03 21:27:56,471 - ERROR - Chroma collection langchain contains fewer than 20 elements.
+2024-11-03 21:27:56,472 - ERROR - Chroma collection langchain contains fewer than 19 elements.
+2024-11-03 21:27:56,473 - ERROR - Chroma collection langchain contains fewer than 18 elements.
+2024-11-03 21:27:56,473 - ERROR - Chroma collection langchain contains fewer than 17 elements.
+2024-11-03 21:27:56,474 - ERROR - Chroma collection langchain contains fewer than 16 elements.
+2024-11-03 21:27:56,474 - ERROR - Chroma collection langchain contains fewer than 15 elements.
+2024-11-03 21:27:56,475 - ERROR - Chroma collection langchain contains fewer than 14 elements.
+2024-11-03 21:27:56,476 - ERROR - Chroma collection langchain contains fewer than 13 elements.
+2024-11-03 21:27:56,476 - ERROR - Chroma collection langchain contains fewer than 12 elements.
+2024-11-03 21:27:56,477 - ERROR - Chroma collection langchain contains fewer than 11 elements.
+2024-11-03 21:27:56,477 - ERROR - Chroma collection langchain contains fewer than 10 elements.
+2024-11-03 21:27:56,478 - ERROR - Chroma collection langchain contains fewer than 9 elements.
+2024-11-03 21:27:56,479 - ERROR - Chroma collection langchain contains fewer than 8 elements.
+2024-11-03 21:27:56,479 - ERROR - Chroma collection langchain contains fewer than 7 elements.
+2024-11-03 21:27:56,480 - ERROR - Chroma collection langchain contains fewer than 6 elements.
+2024-11-03 21:27:56,480 - ERROR - Chroma collection langchain contains fewer than 5 elements.
+2024-11-03 21:27:56,481 - ERROR - Chroma collection langchain contains fewer than 4 elements.
+2024-11-03 21:27:56,481 - ERROR - Chroma collection langchain contains fewer than 3 elements.
+2024-11-03 21:27:59,120 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 21:27:59,120 - INFO - 127.0.0.1 - - [03/Nov/2024 21:27:59] "POST / HTTP/1.1" 200 -
+2024-11-03 21:45:41,475 - INFO -  * Detected change in '/Users/yousefalmutairi/ai project/ai_bot/app.py', reloading
+2024-11-03 21:45:42,454 - INFO -  * Restarting with stat
+2024-11-03 21:45:44,610 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 21:45:48,404 - INFO - تم تحميل 23 مستند
+2024-11-03 21:45:48,465 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 21:45:48,466 - INFO - Running Chroma using direct local API.
+2024-11-03 21:45:48,475 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 21:45:54,539 - INFO - تم إعداد البوت بنجاح
+2024-11-03 21:45:54,539 - INFO - سؤال جديد: exit()
+2024-11-03 21:45:57,507 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 24617 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 21:45:57,508 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 24617 tokens. Please reduce the length of the messages.
+2024-11-03 21:45:57,508 - INFO - سؤال جديد: 
+2024-11-03 21:45:59,301 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 27432 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 21:45:59,302 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 27432 tokens. Please reduce the length of the messages.
+2024-11-03 21:45:59,302 - INFO - سؤال جديد: 
+2024-11-03 21:46:01,165 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 27595 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 21:46:01,166 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 27595 tokens. Please reduce the length of the messages.
+2024-11-03 21:46:01,166 - INFO - سؤال جديد: goals
+2024-11-03 21:46:03,147 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 25489 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 21:46:03,148 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 25489 tokens. Please reduce the length of the messages.
+2024-11-03 21:47:49,059 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 21:47:53,103 - INFO - تم تحميل 23 مستند
+2024-11-03 21:47:53,197 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 21:47:53,198 - INFO - Running Chroma using direct local API.
+2024-11-03 21:47:53,207 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 21:48:00,574 - INFO - تم إعداد البوت بنجاح
+2024-11-03 21:48:44,640 - INFO - سؤال جديد: ماذا تعرف
+2024-11-03 21:48:46,116 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 21259 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 21:48:46,116 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 21259 tokens. Please reduce the length of the messages.
+2024-11-03 21:48:53,910 - INFO - سؤال جديد: من انت
+2024-11-03 21:48:55,536 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 24677 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 21:48:55,536 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 24677 tokens. Please reduce the length of the messages.
+2024-11-03 21:50:34,308 - INFO - سؤال جديد: exit
+2024-11-03 21:50:37,248 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 25056 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 21:50:37,248 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 25056 tokens. Please reduce the length of the messages.
+2024-11-03 21:50:47,564 - INFO - سؤال جديد: 
+2024-11-03 21:50:49,302 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 27595 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 21:50:49,302 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 27595 tokens. Please reduce the length of the messages.
+2024-11-03 21:51:08,692 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 21:51:12,223 - INFO - تم تحميل 23 مستند
+2024-11-03 21:51:12,264 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 21:51:12,265 - INFO - Running Chroma using direct local API.
+2024-11-03 21:51:12,271 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 21:51:18,235 - INFO - تم إعداد البوت بنجاح
+2024-11-03 21:51:42,931 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 21:51:46,555 - INFO - تم تحميل 23 مستند
+2024-11-03 21:51:46,603 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 21:51:46,604 - INFO - Running Chroma using direct local API.
+2024-11-03 21:51:46,611 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 21:52:11,049 - INFO - تم إعداد البوت بنجاح
+2024-11-03 21:54:40,103 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 21:54:43,506 - INFO - تم تحميل 23 مستند
+2024-11-03 21:54:43,560 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 21:54:43,561 - INFO - Running Chroma using direct local API.
+2024-11-03 21:54:43,570 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 21:54:49,056 - INFO - تم إعداد البوت بنجاح
+2024-11-03 22:36:10,956 - INFO - سؤال جديد: hi
+2024-11-03 22:36:13,739 - INFO - error_code=context_length_exceeded error_message="This model's maximum context length is 16385 tokens. However, your messages resulted in 22345 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-11-03 22:36:13,739 - ERROR - خطأ في معالجة السؤال: This model's maximum context length is 16385 tokens. However, your messages resulted in 22345 tokens. Please reduce the length of the messages.
+2024-11-03 22:47:37,273 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 22:47:40,915 - INFO - تم تحميل 23 مستند
+2024-11-03 22:47:40,986 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 22:47:40,987 - INFO - Running Chroma using direct local API.
+2024-11-03 22:47:40,998 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 22:48:00,960 - INFO - تم إعداد البوت بنجاح
+2024-11-03 22:48:07,445 - INFO - سؤال جديد: hi
+2024-11-03 22:48:10,544 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 22:50:31,302 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 22:50:34,734 - INFO - تم تحميل 23 مستند
+2024-11-03 22:50:34,790 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 22:50:34,791 - INFO - Running Chroma using direct local API.
+2024-11-03 22:50:34,799 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 22:50:41,191 - INFO - تم إعداد البوت بنجاح
+2024-11-03 22:54:08,149 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 22:54:11,593 - INFO - تم تحميل 23 مستند
+2024-11-03 22:54:11,651 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 22:54:11,652 - INFO - Running Chroma using direct local API.
+2024-11-03 22:54:11,661 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 22:54:18,834 - INFO - تم إعداد البوت بنجاح
+2024-11-03 22:59:05,193 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 22:59:08,883 - INFO - تم تحميل 23 مستند
+2024-11-03 22:59:08,951 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 22:59:08,952 - INFO - Running Chroma using direct local API.
+2024-11-03 22:59:08,963 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 22:59:14,227 - INFO - تم إعداد البوت بنجاح
+2024-11-03 23:01:32,081 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 23:01:35,559 - INFO - تم تحميل 23 مستند
+2024-11-03 23:01:35,624 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 23:01:35,626 - INFO - Running Chroma using direct local API.
+2024-11-03 23:01:35,635 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 23:01:43,438 - INFO - تم إعداد البوت بنجاح
+2024-11-03 23:06:11,330 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 23:06:14,874 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 23:06:14,875 - INFO - Running Chroma using direct local API.
+2024-11-03 23:06:14,884 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 23:06:23,255 - INFO - تم إعداد البوت بنجاح
+2024-11-03 23:06:23,368 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.8.174:8080
+2024-11-03 23:06:23,368 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-03 23:06:23,370 - INFO -  * Restarting with stat
+2024-11-03 23:06:24,593 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-03 23:06:27,785 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-03 23:06:27,787 - INFO - Running Chroma using direct local API.
+2024-11-03 23:06:27,796 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-03 23:06:34,590 - INFO - تم إعداد البوت بنجاح
+2024-11-03 23:06:34,646 - WARNING -  * Debugger is active!
+2024-11-03 23:06:34,674 - INFO -  * Debugger PIN: 115-137-697
+2024-11-03 23:06:47,499 - INFO - 127.0.0.1 - - [03/Nov/2024 23:06:47] "GET / HTTP/1.1" 200 -
+2024-11-03 23:06:47,705 - INFO - 127.0.0.1 - - [03/Nov/2024 23:06:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-03 23:06:53,005 - INFO - سؤال جديد: ماذا تعرف
+2024-11-03 23:06:56,040 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:06:56,041 - INFO - 127.0.0.1 - - [03/Nov/2024 23:06:56] "POST / HTTP/1.1" 200 -
+2024-11-03 23:07:37,870 - INFO - سؤال جديد: كيف يتم انتاج الهيروجين
+2024-11-03 23:07:43,861 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:07:43,863 - INFO - 127.0.0.1 - - [03/Nov/2024 23:07:43] "POST / HTTP/1.1" 200 -
+2024-11-03 23:08:51,519 - INFO - سؤال جديد: ما هي الاهداف لعام ٢٠٥٠
+2024-11-03 23:08:57,383 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:08:57,385 - INFO - 127.0.0.1 - - [03/Nov/2024 23:08:57] "POST / HTTP/1.1" 200 -
+2024-11-03 23:34:09,307 - INFO - سؤال جديد: ما هو وقف ارتفاع درجة الحرارة عند ١،٥
+2024-11-03 23:34:15,510 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:34:15,512 - INFO - 127.0.0.1 - - [03/Nov/2024 23:34:15] "POST / HTTP/1.1" 200 -
+2024-11-03 23:34:46,762 - INFO - سؤال جديد: اكتب قانون نيوتن
+2024-11-03 23:34:50,929 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:34:50,930 - INFO - 127.0.0.1 - - [03/Nov/2024 23:34:50] "POST / HTTP/1.1" 200 -
+2024-11-03 23:35:43,173 - INFO - سؤال جديد: ما هي الوكالة الدولية
+2024-11-03 23:35:48,785 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:35:48,786 - INFO - 127.0.0.1 - - [03/Nov/2024 23:35:48] "POST / HTTP/1.1" 200 -
+2024-11-03 23:36:17,989 - INFO - سؤال جديد: ما هي المستندات المتوفرة عندك
+2024-11-03 23:36:21,961 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:36:21,962 - INFO - 127.0.0.1 - - [03/Nov/2024 23:36:21] "POST / HTTP/1.1" 200 -
+2024-11-03 23:36:32,093 - INFO - سؤال جديد: اذكر المقدمة
+2024-11-03 23:36:35,681 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:36:35,681 - INFO - 127.0.0.1 - - [03/Nov/2024 23:36:35] "POST / HTTP/1.1" 200 -
+2024-11-03 23:37:44,012 - INFO - سؤال جديد: ما هو سيناريو ١،٥
+2024-11-03 23:37:49,204 - INFO - تم إرسال الإجابة بنجاح
+2024-11-03 23:37:49,206 - INFO - 127.0.0.1 - - [03/Nov/2024 23:37:49] "POST / HTTP/1.1" 200 -

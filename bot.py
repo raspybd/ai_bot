@@ -1,3 +1,6 @@
+from langchain_community.document_loaders import DirectoryLoader
+from langchain_community.vectorstores import Chroma
+from langchain_community.chat_models import ChatOpenAI
 import os
 from dotenv import load_dotenv
 from langchain.document_loaders import DirectoryLoader

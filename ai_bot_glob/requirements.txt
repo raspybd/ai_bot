@@ -1,0 +1,7 @@
+langchain==0.0.184
+chromadb==0.3.22
+openai==0.27.8
+tiktoken==0.4.0
+unstructured==0.7.12
+pyyaml==6.0
+python-dotenv==1.0.0

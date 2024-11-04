@@ -1,0 +1,114 @@
+2024-11-04 09:59:02,004 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-04 09:59:05,850 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-04 09:59:05,851 - INFO - Running Chroma using direct local API.
+2024-11-04 09:59:05,859 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-04 09:59:11,298 - INFO - تم إعداد البوت بنجاح
+2024-11-04 09:59:11,387 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.8.174:8080
+2024-11-04 09:59:11,388 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 09:59:11,389 - INFO -  * Restarting with stat
+2024-11-04 09:59:12,650 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-04 09:59:15,795 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-04 09:59:15,795 - INFO - Running Chroma using direct local API.
+2024-11-04 09:59:15,800 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-04 09:59:22,655 - INFO - تم إعداد البوت بنجاح
+2024-11-04 09:59:22,703 - WARNING -  * Debugger is active!
+2024-11-04 09:59:22,729 - INFO -  * Debugger PIN: 115-137-697
+2024-11-04 09:59:31,731 - INFO - سؤال جديد: مرحبا
+2024-11-04 09:59:34,645 - INFO - تم إرسال الإجابة بنجاح
+2024-11-04 09:59:34,654 - INFO - 127.0.0.1 - - [04/Nov/2024 09:59:34] "POST / HTTP/1.1" 200 -
+2024-11-04 10:10:30,222 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-04 10:10:32,791 - INFO - تم تحميل ملفات النصوص
+2024-11-04 10:10:36,908 - INFO - تم تحميل ملفات PDF
+2024-11-04 10:10:36,908 - WARNING - خطأ في تحميل الملفات الأخرى: __init__() got an unexpected keyword argument 'exclude'
+2024-11-04 10:10:36,908 - INFO - تم تحميل 43 مستند
+2024-11-04 10:10:36,942 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-04 10:10:36,942 - INFO - Running Chroma using direct local API.
+2024-11-04 10:10:36,946 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-04 10:10:46,360 - INFO - تم إعداد البوت بنجاح
+2024-11-04 10:10:46,430 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-11-04 10:10:46,430 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 10:10:46,431 - INFO -  * Restarting with stat
+2024-11-04 10:10:47,690 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-04 10:10:50,498 - INFO - تم تحميل ملفات النصوص
+2024-11-04 10:10:55,474 - INFO - تم تحميل ملفات PDF
+2024-11-04 10:10:55,474 - WARNING - خطأ في تحميل الملفات الأخرى: __init__() got an unexpected keyword argument 'exclude'
+2024-11-04 10:10:55,474 - INFO - تم تحميل 43 مستند
+2024-11-04 10:10:55,530 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-04 10:10:55,531 - INFO - Running Chroma using direct local API.
+2024-11-04 10:10:55,538 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-04 10:11:01,568 - INFO - تم إعداد البوت بنجاح
+2024-11-04 10:11:01,627 - WARNING -  * Debugger is active!
+2024-11-04 10:11:01,680 - INFO -  * Debugger PIN: 115-137-697
+2024-11-04 10:11:13,163 - ERROR - Error in route: index.html
+2024-11-04 10:11:13,164 - INFO - 127.0.0.1 - - [04/Nov/2024 10:11:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-11-04 10:16:10,287 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-04 10:16:13,102 - INFO - تم تحميل ملفات النصوص
+2024-11-04 10:16:17,263 - INFO - تم تحميل ملفات PDF
+2024-11-04 10:16:17,263 - WARNING - خطأ في تحميل الملفات الأخرى: __init__() got an unexpected keyword argument 'exclude'
+2024-11-04 10:16:17,263 - INFO - تم تحميل 43 مستند
+2024-11-04 10:16:17,311 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-04 10:16:17,312 - INFO - Running Chroma using direct local API.
+2024-11-04 10:16:17,317 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-04 10:16:25,568 - INFO - تم إعداد البوت بنجاح
+2024-11-04 10:16:25,633 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-11-04 10:16:25,633 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 10:16:25,635 - INFO -  * Restarting with stat
+2024-11-04 10:16:27,639 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-04 10:16:31,172 - INFO - تم تحميل ملفات النصوص
+2024-11-04 10:16:35,415 - INFO - تم تحميل ملفات PDF
+2024-11-04 10:16:35,416 - WARNING - خطأ في تحميل الملفات الأخرى: __init__() got an unexpected keyword argument 'exclude'
+2024-11-04 10:16:35,416 - INFO - تم تحميل 43 مستند
+2024-11-04 10:16:35,476 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-04 10:16:35,477 - INFO - Running Chroma using direct local API.
+2024-11-04 10:16:35,484 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-04 10:16:45,245 - INFO - تم إعداد البوت بنجاح
+2024-11-04 10:16:45,299 - WARNING -  * Debugger is active!
+2024-11-04 10:16:45,326 - INFO -  * Debugger PIN: 115-137-697
+2024-11-04 10:16:45,395 - INFO - 127.0.0.1 - - [04/Nov/2024 10:16:45] "GET / HTTP/1.1" 200 -
+2024-11-04 10:16:56,547 - INFO - سؤال جديد: مرحبا
+2024-11-04 10:16:59,413 - INFO - تم إرسال الإجابة بنجاح
+2024-11-04 10:16:59,414 - INFO - 127.0.0.1 - - [04/Nov/2024 10:16:59] "POST / HTTP/1.1" 200 -
+2024-11-04 10:18:41,181 - INFO - سؤال جديد: ما هي انواع المحركات
+2024-11-04 10:18:44,935 - INFO - تم إرسال الإجابة بنجاح
+2024-11-04 10:18:44,936 - INFO - 127.0.0.1 - - [04/Nov/2024 10:18:44] "POST / HTTP/1.1" 200 -
+2024-11-04 10:19:06,320 - INFO - سؤال جديد: ماذا تعرف بالتقنية
+
+2024-11-04 10:19:10,273 - INFO - تم إرسال الإجابة بنجاح
+2024-11-04 10:19:10,275 - INFO - 127.0.0.1 - - [04/Nov/2024 10:19:10] "POST / HTTP/1.1" 200 -
+2024-11-04 10:19:32,619 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-04 10:19:36,207 - INFO - تم تحميل ملفات النصوص
+2024-11-04 10:19:43,452 - INFO - تم تحميل ملفات PDF
+2024-11-04 10:19:43,452 - WARNING - خطأ في تحميل الملفات الأخرى: __init__() got an unexpected keyword argument 'exclude'
+2024-11-04 10:19:43,452 - INFO - تم تحميل 101 مستند
+2024-11-04 10:19:43,527 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-04 10:19:43,528 - INFO - Running Chroma using direct local API.
+2024-11-04 10:19:43,537 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-04 10:19:51,750 - INFO - تم إعداد البوت بنجاح
+2024-11-04 10:19:51,808 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+2024-11-04 10:19:51,808 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 10:19:51,810 - INFO -  * Restarting with stat
+2024-11-04 10:19:53,053 - INFO - تم تحميل الإعدادات بنجاح
+2024-11-04 10:19:55,685 - INFO - تم تحميل ملفات النصوص
+2024-11-04 10:20:03,769 - INFO - تم تحميل ملفات PDF
+2024-11-04 10:20:03,769 - WARNING - خطأ في تحميل الملفات الأخرى: __init__() got an unexpected keyword argument 'exclude'
+2024-11-04 10:20:03,769 - INFO - تم تحميل 101 مستند
+2024-11-04 10:20:03,808 - INFO - Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+2024-11-04 10:20:03,808 - INFO - Running Chroma using direct local API.
+2024-11-04 10:20:03,812 - WARNING - Using embedded DuckDB without persistence: data will be transient
+2024-11-04 10:20:11,957 - INFO - تم إعداد البوت بنجاح
+2024-11-04 10:20:12,010 - WARNING -  * Debugger is active!
+2024-11-04 10:20:12,037 - INFO -  * Debugger PIN: 115-137-697
+2024-11-04 10:20:12,090 - INFO - سؤال جديد: ماذا تعرف بالتقنية
+
+2024-11-04 10:20:12,096 - INFO - 127.0.0.1 - - [04/Nov/2024 10:20:12] "GET / HTTP/1.1" 200 -
+2024-11-04 10:20:14,803 - INFO - تم إرسال الإجابة بنجاح
+2024-11-04 10:20:14,804 - INFO - 127.0.0.1 - - [04/Nov/2024 10:20:14] "POST / HTTP/1.1" 200 -
+2024-11-04 10:20:29,636 - INFO - سؤال جديد: ما هو المحرك الكهربائي
+2024-11-04 10:20:36,039 - INFO - تم إرسال الإجابة بنجاح
+2024-11-04 10:20:36,040 - INFO - 127.0.0.1 - - [04/Nov/2024 10:20:36] "POST / HTTP/1.1" 200 -

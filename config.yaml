@@ -1,24 +1,73 @@
+# Categories for document classification
 categories:
-- تقنية
-- علوم
-- أعمال
-- تعليم
+  - تقنية
+  - علوم
+  - أعمال
+  - تعليم
+
+# Document processing and storage settings
 document_settings:
   allowed_extensions:
-  - .txt
-  - .md
-  max_file_size: 5242880
+    - .txt
+    - .md
+    - .pdf
+    - .docx
+  max_file_size: 5242880  # 5MB in bytes
+  chunk_size: 1000
+  chunk_overlap: 200
+  encoding: utf-8
+  storage_directory: ./documents
+
+# Metadata field configurations
 metadata_fields:
-  optional:
-  - source
-  - author
-  - version
   required:
-  - title
-  - category
-  - date
-  - keywords
+    - title
+    - category
+    - date
+    - keywords
+  optional:
+    - source
+    - author
+    - version
+    - page_number
+    - file_type
+    - language
+    - summary
+
+# Search and retrieval configurations
 search_settings:
   case_sensitive: false
   include_metadata: true
   max_results: 50
+  fetch_k: 100  # Number of documents to fetch before filtering
+  score_threshold: 0.5
+  similarity_metric: cosine
+  filter_duplicates: true
+
+# Model configurations
+model_settings:
+  model_name: gpt-3.5-turbo
+  temperature: 0
+  max_tokens: 2000
+  streaming: true
+
+# Vector store settings
+vector_store:
+  persist_directory: db
+  collection_name: documents
+  distance_metric: cosine
+
+# Logging configurations
+logging:
+  level: INFO
+  directory: logs
+  file_format: "bot_%Y%m%d.log"
+  encode: utf-8
+
+# Response formatting
+response_format:
+  language: ar  # Arabic default
+  include_sources: true
+  max_sources: 5
+  include_metadata: true
+  include_scores: true

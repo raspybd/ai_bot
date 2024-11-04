@@ -3,6 +3,7 @@ Flask==2.0.1
 Werkzeug==2.0.1
 flask-talisman==0.8.1
 langchain
+langchain-community
 chromadb
 openai
 tiktoken

@@ -1,6 +1,12 @@
 import os
 from dotenv import load_dotenv
-from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader, Docx2txtLoader, TextLoader
+from langchain_community.document_loaders import (
+    DirectoryLoader,
+    PyPDFLoader,
+    Docx2txtLoader,
+    TextLoader,
+    UnstructuredMarkdownLoader
+)
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
@@ -10,141 +16,208 @@ import yaml
 import logging
 from datetime import datetime
 import codecs
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from pathlib import Path
+import hashlib
+from concurrent.futures import ThreadPoolExecutor
+from tqdm import tqdm
 
-# Create logs directory if it doesn't exist
-os.makedirs('logs', exist_ok=True)
-
-# Setup log file with proper encoding
-log_file = f'logs/bot_{datetime.now().strftime("%Y%m%d")}.log'
-with codecs.open(log_file, 'a', 'utf-8'):
-    pass
-
-# Setup logging configuration
-logging.basicConfig(
-    filename=log_file,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    encoding='utf-8'
-)
-
-class DocumentLoader:
-    """Handle loading of different document types"""
+class DocumentManager:
+    """Handle document loading, processing, and metadata management"""
     
-    @staticmethod
-    def load_documents(directory: str) -> List[Any]:
-        """
-        Load documents from specified directory supporting multiple file types
+    def __init__(self, config: Dict[str, Any]):
+        self.config = config
+        self._setup_loaders()
         
-        Args:
-            directory (str): Path to documents directory
-            
-        Returns:
-            List[Any]: List of loaded documents
-        """
-        documents = []
-        
-        # Define loaders for different file types
-        loaders = {
-            ".txt": DirectoryLoader(directory, glob="**/*.txt", loader_cls=TextLoader),
-            ".pdf": DirectoryLoader(directory, glob="**/*.pdf", loader_cls=PyPDFLoader),
-            ".docx": DirectoryLoader(directory, glob="**/*.docx", loader_cls=Docx2txtLoader)
+    def _setup_loaders(self):
+        """Initialize document loaders for different file types"""
+        self.loaders = {
+            ".txt": TextLoader,
+            ".pdf": PyPDFLoader,
+            ".docx": Docx2txtLoader,
+            ".md": UnstructuredMarkdownLoader
         }
         
-        # Load documents using appropriate loader
-        for file_type, loader in loaders.items():
-            try:
-                docs = loader.load()
-                documents.extend(docs)
-                logging.info(f"Loaded {len(docs)} {file_type} documents")
-            except Exception as e:
-                logging.error(f"Error loading {file_type} documents: {str(e)}")
+    def _validate_metadata(self, metadata: Dict[str, Any]) -> bool:
+        """Validate document metadata against configuration requirements"""
+        required_fields = self.config['metadata_fields']['required']
+        return all(field in metadata for field in required_fields)
+    
+    def _validate_category(self, category: str) -> bool:
+        """Validate document category against configured categories"""
+        return category in self.config['categories']
+    
+    def _get_file_hash(self, file_path: str) -> str:
+        """Generate hash for file to check for duplicates"""
+        with open(file_path, 'rb') as f:
+            return hashlib.md5(f.read()).hexdigest()
+    
+    def load_single_document(self, file_path: str) -> Optional[List[Any]]:
+        """Load a single document with appropriate loader"""
+        try:
+            file_extension = Path(file_path).suffix.lower()
+            if file_extension not in self.config['document_settings']['allowed_extensions']:
+                logging.warning(f"غير مسموح بنوع الملف: {file_extension}")
+                return None
+                
+            if os.path.getsize(file_path) > self.config['document_settings']['max_file_size']:
+                logging.warning(f"حجم الملف كبير جداً: {file_path}")
+                return None
+                
+            loader_class = self.loaders.get(file_extension)
+            if not loader_class:
+                logging.warning(f"لا يوجد معالج لنوع الملف: {file_extension}")
+                return None
+                
+            loader = loader_class(file_path)
+            return loader.load()
+            
+        except Exception as e:
+            logging.error(f"خطأ في تحميل الملف {file_path}: {str(e)}")
+            return None
+
+    def load_documents(self, directory: str) -> List[Any]:
+        """Load all documents from directory with parallel processing"""
+        documents = []
+        processed_hashes = set()
+        
+        # Get all files in directory
+        all_files = []
+        for ext in self.config['document_settings']['allowed_extensions']:
+            all_files.extend(Path(directory).glob(f"**/*{ext}"))
+        
+        with ThreadPoolExecutor() as executor:
+            # Create progress bar
+            with tqdm(total=len(all_files), desc="تحميل المستندات") as pbar:
+                future_to_file = {
+                    executor.submit(self.load_single_document, str(file_path)): file_path 
+                    for file_path in all_files
+                }
+                
+                for future in future_to_file:
+                    file_path = future_to_file[future]
+                    try:
+                        docs = future.result()
+                        if docs:
+                            file_hash = self._get_file_hash(str(file_path))
+                            if file_hash not in processed_hashes:
+                                documents.extend(docs)
+                                processed_hashes.add(file_hash)
+                    except Exception as e:
+                        logging.error(f"خطأ في معالجة الملف {file_path}: {str(e)}")
+                    pbar.update(1)
         
         return documents
 
 class DocumentBot:
     def __init__(self):
-        """Initialize the DocumentBot with environment setup and components"""
+        """Initialize DocumentBot with configuration and components"""
         self.setup_environment()
+        self.setup_logging()
         self.setup_bot()
         
     def setup_environment(self):
         """Setup environment variables and load configuration"""
         try:
-            # Load environment variables
             load_dotenv()
             self.api_key = os.getenv('OPENAI_API_KEY')
             if not self.api_key:
-                raise ValueError("OPENAI_API_KEY not found in environment variables")
+                raise ValueError("لم يتم العثور على مفتاح API")
             
-            # Load configuration file
             with codecs.open('config.yaml', 'r', 'utf-8') as f:
                 self.config = yaml.safe_load(f)
             
-            logging.info("Environment setup completed successfully")
+            logging.info("تم تحميل الإعدادات بنجاح")
         except Exception as e:
-            logging.error(f"Environment setup error: {str(e)}")
+            logging.error(f"خطأ في إعداد البيئة: {str(e)}")
             raise
+            
+    def setup_logging(self):
+        """Setup logging configuration"""
+        log_config = self.config.get('logging', {})
+        log_dir = log_config.get('directory', 'logs')
+        os.makedirs(log_dir, exist_ok=True)
+        
+        log_file = os.path.join(
+            log_dir,
+            datetime.now().strftime(log_config.get('file_format', 'bot_%Y%m%d.log'))
+        )
+        
+        logging.basicConfig(
+            filename=log_file,
+            level=getattr(logging, log_config.get('level', 'INFO')),
+            format=log_config.get('format', '%(asctime)s - %(levelname)s - %(message)s'),
+            encoding=log_config.get('encode', 'utf-8')
+        )
 
     def setup_bot(self):
         """Setup bot components including document loading and QA chain"""
         try:
-            # Load documents using the DocumentLoader
-            documents = DocumentLoader.load_documents('./documents')
-            if not documents:
-                raise ValueError("No documents found in the documents directory")
+            # Initialize document manager
+            doc_manager = DocumentManager(self.config)
             
-            logging.info(f"Loaded total of {len(documents)} documents")
+            # Load documents
+            documents = doc_manager.load_documents(
+                self.config['document_settings']['storage_directory']
+            )
+            
+            if not documents:
+                raise ValueError("لم يتم العثور على مستندات في المجلد المحدد")
+            
+            logging.info(f"تم تحميل {len(documents)} مستند")
 
-            # Split texts into chunks
+            # Split texts
             text_splitter = RecursiveCharacterTextSplitter(
-                chunk_size=1000,
-                chunk_overlap=200,
-                length_function=len,
-                separators=["\n\n", "\n", " ", ""]
+                chunk_size=self.config['document_settings']['chunk_size'],
+                chunk_overlap=self.config['document_settings']['chunk_overlap'],
+                length_function=len
             )
             texts = text_splitter.split_documents(documents)
-            logging.info(f"Created {len(texts)} text chunks")
+            logging.info(f"تم إنشاء {len(texts)} قطعة نصية")
 
-            # Create embeddings and vector store
+            # Setup vector store
             embeddings = OpenAIEmbeddings()
+            vector_store_config = self.config['vector_store']
             
             # Create persistent storage directory
-            persist_directory = "db"
-            os.makedirs(persist_directory, exist_ok=True)
+            os.makedirs(vector_store_config['persist_directory'], exist_ok=True)
             
-            # Initialize or load vector store
+            # Initialize vector store
             self.db = Chroma.from_documents(
                 documents=texts,
                 embedding=embeddings,
-                persist_directory=persist_directory
+                persist_directory=vector_store_config['persist_directory'],
+                collection_name=vector_store_config['collection_name']
             )
             self.db.persist()
             
-            # Setup retriever with configuration
+            # Setup retriever
+            search_settings = self.config['search_settings']
             retriever = self.db.as_retriever(
                 search_kwargs={
-                    "k": self.config['search_settings']['max_results'],
-                    "fetch_k": self.config['search_settings'].get('fetch_k', 20)
+                    "k": search_settings['max_results'],
+                    "fetch_k": search_settings.get('fetch_k', 100),
+                    "filter_duplicates": search_settings.get('filter_duplicates', True)
                 }
             )
             
-            # Initialize QA chain
+            # Setup QA chain
+            model_settings = self.config['model_settings']
             self.qa = RetrievalQA.from_chain_type(
                 llm=ChatOpenAI(
-                    temperature=0,
-                    model_name="gpt-3.5-turbo",
-                    streaming=True
+                    temperature=model_settings['temperature'],
+                    model_name=model_settings['model_name'],
+                    max_tokens=model_settings['max_tokens'],
+                    streaming=model_settings['streaming']
                 ),
                 chain_type="stuff",
                 retriever=retriever,
                 return_source_documents=True
             )
             
-            logging.info("Bot setup completed successfully")
+            logging.info("تم إعداد البوت بنجاح")
         except Exception as e:
-            logging.error(f"Bot setup error: {str(e)}")
+            logging.error(f"خطأ في إعداد البوت: {str(e)}")
             raise
 
     def answer_question(self, question: str) -> Dict[str, Any]:
@@ -158,22 +231,23 @@ class DocumentBot:
             Dict[str, Any]: Contains the answer and source documents
         """
         try:
-            logging.info(f"New question received: {question}")
+            logging.info(f"سؤال جديد: {question}")
             result = self.qa({"query": question})
+            
+            response_format = self.config['response_format']
+            max_sources = response_format.get('max_sources', 5)
             
             # Prepare sources information
             sources = []
-            seen_contents = set()  # To avoid duplicate sources
+            seen_contents = set()
             
-            for doc in result["source_documents"]:
-                # Skip if we've already included this content
-                if doc.page_content in seen_contents:
+            for doc in result["source_documents"][:max_sources]:
+                if doc.page_content in seen_contents and response_format.get('filter_duplicates', True):
                     continue
                     
                 source = {
                     "content": doc.page_content,
-                    "source": doc.metadata.get("source", "Unspecified"),
-                    "page": doc.metadata.get("page", "Unspecified")
+                    "metadata": doc.metadata if response_format.get('include_metadata', True) else {}
                 }
                 sources.append(source)
                 seen_contents.add(doc.page_content)
@@ -183,50 +257,53 @@ class DocumentBot:
                 "sources": sources
             }
             
-            logging.info("Answer generated successfully")
+            logging.info("تم إنشاء الإجابة بنجاح")
             return response
             
         except Exception as e:
-            error_msg = f"Error processing question: {str(e)}"
+            error_msg = f"خطأ في معالجة السؤال: {str(e)}"
             logging.error(error_msg)
             return {
-                "answer": "Sorry, an error occurred while processing your question.",
+                "answer": "عذراً، حدث خطأ في معالجة سؤالك.",
                 "sources": []
             }
 
 def main():
     """Main function for running the bot in CLI mode"""
-    print("Loading bot...")
+    print("جاري تحميل البوت...")
     try:
         bot = DocumentBot()
-        print("\nBot loaded successfully!")
-        print("Type 'exit' to quit")
+        print("\nتم تحميل البوت بنجاح!")
+        print("اكتب 'خروج' للإنهاء")
         
         while True:
-            question = input("\nYour question: ").strip()
+            question = input("\nسؤالك: ").strip()
             
-            if question.lower() == 'exit':
-                print("Thank you for using the bot!")
+            if question.lower() in ['خروج', 'exit']:
+                print("شكراً لاستخدام البوت!")
                 break
                 
             if not question:
-                print("Please enter a valid question")
+                print("الرجاء إدخال سؤال صحيح")
                 continue
             
             response = bot.answer_question(question)
             
-            print("\nAnswer:")
+            print("\nالإجابة:")
             print(response["answer"])
             
-            print("\nSources used:")
-            for i, source in enumerate(response["sources"], 1):
-                print(f"\nSource {i}:")
-                print(f"Content: {source['content']}")
-                print(f"Source: {source['source']}")
-                print(f"Page: {source['page']}")
+            if response["sources"]:
+                print("\nالمصادر المستخدمة:")
+                for i, source in enumerate(response["sources"], 1):
+                    print(f"\nمصدر {i}:")
+                    print(f"المحتوى: {source['content']}")
+                    if source.get('metadata'):
+                        print("البيانات الوصفية:")
+                        for key, value in source['metadata'].items():
+                            print(f"  {key}: {value}")
             
     except Exception as e:
-        error_msg = f"Error running bot: {str(e)}"
+        error_msg = f"خطأ في تشغيل البوت: {str(e)}"
         print(error_msg)
         logging.error(error_msg)
 

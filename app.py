@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, send_from_directory
+from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 from flask_talisman import Talisman
 import os
@@ -10,8 +10,6 @@ import traceback
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)
-
-# Disable HTTPS requirement during development
 Talisman(app, force_https=False)
 
 # Setup logging
@@ -21,77 +19,97 @@ logger = logging.getLogger(__name__)
 # Initialize bot
 try:
     bot = DocumentBot()
-    logger.info("Bot loaded successfully")
+    bot_status = "ready"
+    logger.info("تم تحميل البوت بنجاح")
 except Exception as e:
-    logger.error(f"Error loading bot: {str(e)}")
-    logger.error(traceback.format_exc())
     bot = None
+    bot_status = str(e)
+    logger.error(f"خطأ في تحميل البوت: {str(e)}")
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    """Render main page"""
+    """Handle both page render and questions"""
     try:
-        logger.info("Accessing index page")
-        return render_template('index.html')
-    except Exception as e:
-        logger.error(f"Error rendering index: {str(e)}")
-        logger.error(traceback.format_exc())
-        return str(e), 500
-
-@app.route('/api/ask', methods=['GET', 'POST'])
-def ask():
-    """Handle questions"""
-    try:
-        logger.info(f"Request method: {request.method}")
-        logger.info(f"Request data: {request.form}")
+        # Handle question from URL parameter or form
+        question = request.args.get('question') or request.form.get('question')
         
+        if question:
+            logger.info(f"معالجة السؤال: {question}")
+            
+            if not bot:
+                return render_template('index.html', 
+                    bot_status=bot_status,
+                    error="البوت غير متاح حالياً"
+                )
+            
+            try:
+                response = bot.answer_question(question)
+                logger.info("تم إنشاء الإجابة")
+                return render_template('index.html',
+                    bot_status=bot_status,
+                    question=question,
+                    answer=response["answer"],
+                    sources=response["sources"]
+                )
+            except Exception as e:
+                logger.error(f"خطأ في معالجة السؤال: {str(e)}")
+                logger.error(traceback.format_exc())
+                return render_template('index.html',
+                    bot_status=bot_status,
+                    error=f"حدث خطأ في معالجة السؤال: {str(e)}"
+                )
+        
+        # Just render the page if no question
+        return render_template('index.html', bot_status=bot_status)
+        
+    except Exception as e:
+        logger.error(f"خطأ عام: {str(e)}")
+        logger.error(traceback.format_exc())
+        return render_template('index.html',
+            bot_status="error",
+            error=f"حدث خطأ: {str(e)}"
+        )
+
+@app.route('/api/ask', methods=['POST'])
+def ask():
+    """API endpoint for questions"""
+    try:
         if not bot:
             return jsonify({
-                "error": "Bot is not initialized",
-                "details": "Please check server logs"
+                "error": "البوت غير متاح حالياً",
+                "details": bot_status
             }), 503
 
-        if request.method == 'POST':
-            question = request.form.get('question', '')
-        else:
-            question = request.args.get('question', '')
-
-        logger.info(f"Received question: {question}")
-
+        question = request.form.get('question', '').strip()
         if not question:
             return jsonify({
-                "error": "No question provided",
-                "details": "Please provide a question"
+                "error": "الرجاء إدخال سؤال"
             }), 400
 
+        logger.info(f"معالجة السؤال عبر API: {question}")
         response = bot.answer_question(question)
-        logger.info("Answer generated successfully")
+        logger.info("تم إنشاء الإجابة")
         
-        return jsonify(response)
+        return jsonify({
+            "answer": response["answer"],
+            "sources": response["sources"]
+        })
 
     except Exception as e:
-        logger.error(f"Error processing question: {str(e)}")
+        logger.error(f"خطأ في API: {str(e)}")
         logger.error(traceback.format_exc())
         return jsonify({
-            "error": "Internal server error",
-            "details": str(e)
+            "error": f"حدث خطأ في معالجة السؤال: {str(e)}"
         }), 500
 
 @app.route('/api/health')
 def health_check():
     """Health check endpoint"""
-    try:
-        return jsonify({
-            'status': 'healthy' if bot else 'bot_not_initialized',
-            'timestamp': datetime.now().isoformat(),
-            'bot_status': 'loaded' if bot else 'not_loaded'
-        })
-    except Exception as e:
-        logger.error(f"Health check error: {str(e)}")
-        return jsonify({
-            'status': 'error',
-            'error': str(e)
-        }), 500
+    return jsonify({
+        'status': 'ready' if bot else 'error',
+        'bot_status': bot_status,
+        'timestamp': datetime.now().isoformat()
+    })
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))

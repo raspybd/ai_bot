@@ -1,7 +1,7 @@
 [project]
 name = "document-qa-bot"
 version = "0.1.0"
-description = "Document QA Bot using LangChain"
+description = "Document QA Bot using LangChain with PDF and DOCX support"
 requires-python = ">=3.8"
 
 dependencies = [
@@ -14,7 +14,11 @@ dependencies = [
     "langchain-openai>=0.0.1",
     "openai>=1.0.0",
     "chromadb>=0.4.0",
-    "pyyaml>=6.0.1"
+    "pyyaml>=6.0.1",
+    "python-docx>=0.8.11",
+    "docx2txt>=0.8",
+    "pypdf>=3.17.1",
+    "tiktoken>=0.5.1"
 ]
 
 [build-system]
